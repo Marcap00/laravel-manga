@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\MangaController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MangaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,12 +16,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Auth::routes();
-
+Route::get('/mangas/index', [MangaController::class, 'index'])->name('mangas');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/manga/create', [MangaController::class, 'create'])->name('manga.create');
 
+Route::get('/manga/create', [MangaController::class, 'create'])->name('manga.create');
 Route::get('/mangas/{id}', [MangaController::class, 'show'])->name('mangas.show');

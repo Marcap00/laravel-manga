@@ -13,6 +13,9 @@ class MangaController extends Controller
     public function index()
     {
         //
+        $mangas = Manga::all();
+        // dd($trains);
+        return view('mangas.index', compact('mangas'));
     }
 
     /**

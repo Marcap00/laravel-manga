@@ -15,10 +15,10 @@ use App\Http\Controllers\MangaController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/mangas', [MangaController::class, 'index'])->name('mangas');
+Route::get('/mangas/index', [MangaController::class, 'index'])->name('mangas');

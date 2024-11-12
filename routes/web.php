@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\MangaController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\MangaController;
+
 
 /*
 |--------------------------------------------------------------------------

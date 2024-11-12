@@ -18,6 +18,8 @@ return new class extends Migration
             $table->text('description')->nullable(false);
             $table->string('autor')->nullable(false);
             $table->string('genre')->nullable(false);
+            $table->string('publisher')->nullable(false);
+            $table->string('thumbs')->nullable(false);
             $table->timestamps();
         });
     }

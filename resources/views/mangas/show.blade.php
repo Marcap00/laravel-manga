@@ -39,7 +39,8 @@
                                 {{ $manga['price'] }}
                             </td>
                             <td>
-                                {{ $manga['thumbs'] }}
+                                <img src="{{ $manga['thumbs'] }}" alt="">
+
                             </td>
                             <td>
                                 {{ $manga['description'] }}

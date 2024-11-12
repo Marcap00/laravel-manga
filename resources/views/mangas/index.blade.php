@@ -13,7 +13,7 @@
         </div>
         <div class="row d-flex justify-content-center">
             <div class="d-flex justify-content-center">
-                {{-- <a href="{{route('mangas.create')}}" class="btn btn-success rounded-5">ADD NEW MANGA</a> --}}
+                <a href="{{route('manga.create')}}" class="btn btn-success rounded-5">ADD NEW MANGA</a>
             </div>
             @foreach ($mangas as $index => $manga)
             <div class="col-3 m-3 p-3 d-flex flex-column align-items-center  border rounded">
@@ -31,8 +31,7 @@
                     <p>
                         {{$manga["price"]}} €
                     </p>
-                    {{-- {{-- <a href='{{route('manga.show', $manga->id)}}' class='btn btn-light'><strong>MORE INFO</strong></a>
-                    <a href='{{route('manga.edit', $manga->id)}}' class='btn btn-light'><strong>EDIT MANGA</strong></a> --}}
+                    <a href='{{route('mangas.show', $manga->id)}}' class='btn btn-light'><strong>MORE INFO</strong></a>
                 </div>
             </div>
             @endforeach

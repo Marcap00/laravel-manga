@@ -22,3 +22,5 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/manga/create', [MangaController::class, 'create'])->name('manga.create');
+
+Route::get('/mangas/{id}', [MangaController::class, 'show'])->name('mangas.show');

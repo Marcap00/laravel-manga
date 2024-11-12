@@ -24,28 +24,25 @@
                     <tbody>
                         <tr>
                             <td>
-                                {{ $post['id'] }}
+                                {{ $manga['title'] }}
                             </td>
                             <td>
-                                {{ $post['title'] }}
+                                {{ $manga['autor'] }}
                             </td>
                             <td>
-                                {{ $post['autor'] }}
+                                {{ $manga['genre'] }}
                             </td>
                             <td>
-                                {{ $post['genre'] }}
+                                {{ $manga['publisher'] }}
                             </td>
                             <td>
-                                {{ $post['publisher'] }}
+                                {{ $manga['price'] }}
                             </td>
                             <td>
-                                {{ $post['price'] }}
+                                {{ $manga['thumbs'] }}
                             </td>
                             <td>
-                                {{ $post['thumbs'] }}
-                            </td>
-                            <td>
-                                {{ $post['description'] }}
+                                {{ $manga['description'] }}
                             </td>
                         </tr>
                     </tbody>

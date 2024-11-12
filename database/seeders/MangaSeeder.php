@@ -6,7 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Manga;
 
-class MangasSeeder extends Seeder
+class MangaSeeder extends Seeder
 {
     /**
      * Run the database seeds.

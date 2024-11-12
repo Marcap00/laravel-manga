@@ -34,9 +34,10 @@ class MangaController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Manga $manga)
+    public function show(string $id)
     {
-        //
+        $manga = Manga::findOrFail($id);
+        return view('mangas.show', compact('manga'));
     }
 
     /**
